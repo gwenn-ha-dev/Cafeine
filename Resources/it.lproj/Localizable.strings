@@ -1,0 +1,11 @@
+"app.name" = "Cafeine";
+"status.inactive" = "Cafeine — inattivo";
+"status.indefinite" = "Cafeine — attivo a tempo indeterminato";
+"status.remaining" = "Cafeine — attivo ancora per %@";
+"menu.deactivate" = "Disattiva";
+"menu.activateFor" = "Attiva per…";
+"menu.indefinitely" = "A tempo indeterminato";
+"menu.allowDisplaySleep" = "Consenti stop del monitor";
+"menu.launchAtLogin" = "Apri al login";
+"menu.about" = "Informazioni su Cafeine";
+"menu.quit" = "Esci";

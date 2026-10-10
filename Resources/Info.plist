@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleExecutable</key><string>Cafeine</string>
+  <!-- Charte §6 : l'anglais est la langue de développement. Les localisations
+       sont déclarées, pas devinées. -->
+  <key>CFBundleDevelopmentRegion</key><string>en</string>
+  <key>CFBundleLocalizations</key>
+  <array><string>en</string><string>fr</string><string>de</string><string>es</string><string>it</string></array>
+  <key>CFBundleIdentifier</key><string>dev.gwennha.Cafeine</string>
+  <key>CFBundleName</key><string>Cafeine</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleShortVersionString</key><string>1.0.0</string>
+  <key>CFBundleVersion</key><string>1</string>
+  <key>LSMinimumSystemVersion</key><string>13.0</string>
+  <key>LSApplicationCategoryType</key><string>public.app-category.utilities</string>
+  <!-- Une app de barre des menus : ni Dock, ni menu d'application. -->
+  <key>LSUIElement</key><true/>
+  <key>NSPrincipalClass</key><string>NSApplication</string>
+  <key>NSHighResolutionCapable</key><true/>
+  <key>CFBundleIconFile</key><string>AppIcon</string>
+  <key>NSHumanReadableCopyright</key><string>© 2026 gwenn-ha-dev</string>
+</dict>
+</plist>
