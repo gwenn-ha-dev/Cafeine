@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cafeine — keep your Mac awake from the menu bar</title>
+<meta name="description" content="Cafeine keeps your Mac awake from the menu bar: one click, a duration if you want one, about 12 MB of memory. Free and open source.">
+<link rel="canonical" href="https://gwenn-ha-dev.github.io/Cafeine/">
+<link rel="icon" href="images/icon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cafeine — keep your Mac awake from the menu bar">
+<meta property="og:description" content="Cafeine keeps your Mac awake from the menu bar: one click, a duration if you want one, about 12 MB of memory. Free and open source.">
+<meta property="og:url" content="https://gwenn-ha-dev.github.io/Cafeine/">
+<meta property="og:image" content="https://gwenn-ha-dev.github.io/Cafeine/images/social-preview.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://gwenn-ha-dev.github.io/Cafeine/images/social-preview.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Cafeine",
+ "operatingSystem":"macOS 13 or later","applicationCategory":"UtilitiesApplication",
+ "description":"Cafeine keeps your Mac awake from the menu bar: one click, a duration if you want one, about 12 MB of memory. Free and open source.",
+ "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://opensource.org/licenses/MIT",
+ "downloadUrl":"https://github.com/gwenn-ha-dev/Cafeine/releases/latest",
+ "codeRepository":"https://github.com/gwenn-ha-dev/Cafeine","image":"https://gwenn-ha-dev.github.io/Cafeine/images/active.png"}
+</script>
+<style>
+  :root {
+    --bg: #ffffff; --panel: #f4f5f7; --line: #e2e4e8; --text: #16181d; --muted: #5d6170;
+    --accent: #2c6e52; --accent-text: #fff; --link: #1f5fbf;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111214; --panel: #1b1c1f; --line: #2c2d31; --text: #ececee; --muted: #a2a3a8; --link: #8ab4ff; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; }
+  a { color: var(--link); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 72px 0 40px; text-align: center; }
+  .icon { width: 96px; height: 96px; }
+  h1 { font-size: clamp(34px, 6vw, 56px); margin: 12px 0 4px; letter-spacing: -0.02em; }
+  .lead { font-size: clamp(19px, 2.6vw, 23px); max-width: 760px; margin: 0 auto 28px; }
+  .cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 12px 22px; border-radius: 10px; text-decoration: none;
+         font-weight: 600; border: 1px solid var(--line); color: var(--text); background: var(--panel); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+  .req { color: var(--muted); font-size: 14px; margin-top: 12px; }
+  figure { margin: 0; }
+  .shot img, .hero img { max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 12px; }
+  figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; text-align: center; }
+  section { padding: 48px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 28px; margin: 0 0 20px; letter-spacing: -0.01em; }
+  .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; }
+  .split.rev .text { order: 2; }
+  @media (max-width: 760px) { .split { grid-template-columns: 1fr; } .split.rev .text { order: 0; } }
+  code { font: 14.5px ui-monospace, "SF Mono", Menlo, monospace; background: var(--panel);
+         padding: 2px 6px; border-radius: 6px; border: 1px solid var(--line); }
+  footer { padding: 36px 0 56px; color: var(--muted); font-size: 14px; text-align: center;
+           border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <img class="icon" src="images/icon.png" width="96" height="96" alt="">
+  <h1>Cafeine</h1>
+  <p class="lead">Keeps your Mac awake from the menu bar: one click on the cup, and the Mac stops going to sleep until you click again or the time you chose runs out.</p>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/gwenn-ha-dev/Cafeine/releases/latest">Download for macOS</a>
+    <a class="btn" href="https://github.com/gwenn-ha-dev/Cafeine">Source on GitHub</a>
+  </div>
+  <p class="req">Free and open source (MIT) · macOS 13 or later · signed and notarized · English and French</p>
+</header>
+
+<div class="wrap hero">
+  <figure>
+    <img src="images/active.png" alt="The Cafeine menu while active: active for 1 hr, 59 min more, then Deactivate, durations from Indefinitely to 8 hours, Allow Display Sleep, Open at Login, About and Quit">
+    <figcaption>The menu, on a right-click: two hours chosen, one hour 59 minutes to go.</figcaption>
+  </figure>
+</div>
+
+<section class="wrap" style="margin-top:48px">
+  <h2>Why Cafeine</h2>
+  <div class="grid3">
+    <div class="card"><h3>One click</h3><p>Click the cup in the menu bar to keep the Mac awake; click again to let it sleep. A filled cup means it is on.</p></div>
+    <div class="card"><h3>For as long as you need</h3><p>Indefinitely, or for 15 minutes up to 8 hours. When the time runs out, the Mac sleeps again on its own.</p></div>
+    <div class="card"><h3>Screen off, Mac on</h3><p>Allow Display Sleep keeps the system awake while the screen turns off — for a download or a long job.</p></div>
+    <div class="card"><h3>About 12 MB</h3><p>No child process, no notifications, no update checker, no settings window. One power assertion, released if the app ever quits.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="split">
+    <div class="text">
+      <h2>Pick a duration</h2>
+      <p>Right-click the cup for the menu: no limit, or 15 minutes, 1, 2, 4 or 8 hours. Open at Login is there too. From a script, <code>open -a Cafeine --args -activate 3600</code> starts it already on.</p>
+    </div>
+    <figure class="shot"><img src="images/inactive.png" alt="The menu while inactive: Cafeine — inactive, then the durations and the options" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="split rev">
+    <div class="text">
+      <h2>Nothing else</h2>
+      <p>No Dock icon, no window, no notifications piling up. The About panel is the only window Cafeine has. English, French, German, Spanish and Italian, following the system language.</p>
+    </div>
+    <figure class="shot"><img src="images/about.png" alt="The About panel: the green cup icon, Cafeine, version 1.0.0, © 2026 gwenn-ha-dev" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="wrap" style="text-align:center">
+  <h2>Get it</h2>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/gwenn-ha-dev/Cafeine/releases/latest">Download the .dmg</a>
+    <a class="btn" href="https://github.com/gwenn-ha-dev/Cafeine#readme">Read the README</a>
+    <a class="btn" href="https://github.com/gwenn-ha-dev/Cafeine/blob/main/README.fr.md">En français</a>
+  </div>
+  <p class="req">Open the .dmg, drag Cafeine onto Applications. It is signed with a Developer ID and notarized by Apple: it opens with a double click.</p>
+</section>
+
+<footer class="wrap">
+  Cafeine · MIT · <a href="https://github.com/gwenn-ha-dev/Cafeine">github.com/gwenn-ha-dev/Cafeine</a>
+</footer>
+</body>
+</html>
